@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html> 
+<head>
+   <title>Fashion Feet</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: lightblue;">
+    <h1 class="c1">Update a Product</h1>
+
+    <form action="/update" method="POST">
+        <label>Product Id:</label>
+        <input type="number" placeholder="Enter product ID" name="pid"><br><br>
+
+        <label>New Stock:</label>
+        <input type="number" placeholder="Enter quantity" name="stock"><br><br>
+
+        <button type="button" class="btn btn-primary">Update</button><br><br>
+    </form>
+
+    <a href="/" class="c2">Home Page</a><br><br>
+</body>
+</html>

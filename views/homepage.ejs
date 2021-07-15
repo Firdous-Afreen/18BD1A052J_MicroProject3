@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html> 
+<head>
+   <title>Fashion Feet</title>
+  <link rel="stylesheet" href="style.css">
+  <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <h1 class="c1">Fashion Feet Inventory Management System</h1>
+
+  <div class="left">
+    <ul class="nav bg-secondary">
+      <li class="nav-item">
+        <h3><a class="nav-link" href="/">
+          Home
+        </a></h3>
+      </li>
+      <li class="nav-item">
+        <h3><a class="nav-link" href="/add">
+          Add Product
+        </a></h3>
+      </li>
+      <li class="nav-item">
+        <h3><a class="nav-link" href="/update">
+          Update Product
+        </a></h3>
+      </li>
+      <li class="nav-item">
+        <h3><a class="nav-link" href="/delete">
+          Delete Product
+        </a></h3>
+      </li>
+    </ul>
+  </div>
+
+  <p>Fashion Feet was established in the year 2013. We are the leading Manufacturer of Embroidered Leather Footware, Party Wear Leather
+      Footwear, Gents Leather Slippers, Casual Leather Slipper, Ladies Leather Slippers, Fancy Leather Slippers, Stylish Leather Sandle,
+      Leather Mens Sandals, Roman Leather Sandals, Ladies Leather Sandals etc. Backed by a team of skilled professionals, our enterprise
+      is able to offer an exclusive range of Flip Flops Slipper. This range is manufactured using finest quality material and high end
+      technology under the strict industry laid norms.
+  </p>
+
+  <p>Our offered range is available in different sizes, colors and designs as per the precise needs of the clients. Apart from this,
+      we deliver the range within the promised time frame to the clients. These sandals are available in various sizes and patterns as per
+      latest fashion trend of the market. With the aid of our industrious workforce, we are offering Womens Leather Sandal to the clients.
+      Excellent quality leather accredited from our genuine vendors has been used for the fabrication of the entire range of this Womens
+      Leather Sandal.
+  </p>
+
+  <center>
+    <table>
+      <tr>
+        <th>Product ID</th>
+        <th>Category</th>
+        <th>Type</th>
+        <th>Size</th>
+        <th>Stock</th>
+        <th>Price</th>
+      </tr>
+
+      <% for(var i=0;i<data.length;i++){%>
+        <tr>
+          <td><%=data[i].pid%></td>
+          <td><%=data[i].category%></td>
+          <td><%=data[i].type%></td>
+          <td><%=data[i].size%></td>
+          <td><%=data[i].stock%></td>
+          <td><%=data[i].sp%></td>
+        </tr>
+      <%}%>
+    </table>
+  </center>
+
+  <footer>
+    &copy; Copyright 2021 FahionFeet
+  </footer>
+
+</body>
+</html>
