@@ -1,0 +1,11 @@
+﻿pid,category,type,size,stock,sp
+101,Shoes,Leather,6,40,700
+102,Shoes,Sneaker,7,50,1000
+103,Shoes,Running,8,20,1200
+104,Sandels,High heels,6,30,1000
+105,Sandels,Low heels,7,50,900
+106,Sandels,Block heels,8,60,800
+107,Formals,Casual,6,65,1000
+108,Formals,Fancy,7,45,750
+109,Slippers,Flipflop,8,35,1150
+110,Slippers,Fancy,6,25,500
